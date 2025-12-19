@@ -44,7 +44,7 @@ $stmt->bind_param(
 if ($stmt->execute()) {
     echo json_encode([
         "status" => "success",
-        "message" => "Event added successfully",
+        "message" => "Event added successfull",
         "event_id" => $stmt->insert_id
     ]);
 } else {
